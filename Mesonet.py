@@ -549,7 +549,7 @@ def SoApps():
         
     print(x)
     print(y)
-    fig = plt.figure(figsize=(9.5,9))
+    fig = plt.figure(figsize=(6.5,6))
     #fig.patch.set_facecolor('grey')
     ax = plt.subplot((111))
     #ax.set_facecolor('grey')
