@@ -554,7 +554,7 @@ def SoApps():
     ax = plt.subplot((111))
     #ax.set_facecolor('grey')
     ax.axis('off')
-    ax.barbs(x,y,u,v, length=5, linewidth=0.5,color='black')
+    ax.barbs(x,y,u,v, length=5, linewidth=0.6,color='black')
     uf = len(plotdata)
     df = len(plotdew)
     hf = len(x)
