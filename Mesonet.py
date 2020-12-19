@@ -549,12 +549,12 @@ def SoApps():
         
     print(x)
     print(y)
-    fig = plt.figure(figsize=(6.5,6))
+    fig = plt.figure(figsize=(6,5.5))
     #fig.patch.set_facecolor('grey')
     ax = plt.subplot((111))
     #ax.set_facecolor('grey')
     ax.axis('off')
-    ax.barbs(x,y,u,v, length=6,color='black')
+    ax.barbs(x,y,u,v, length=4.5,color='black')
     uf = len(plotdata)
     df = len(plotdew)
     hf = len(x)
@@ -564,9 +564,9 @@ def SoApps():
     print("Length x " + str(hf))
     print("Length y " + str(jf))
     for b in x:
-        plt.text((x[p])-0.2,(y[p])+0.1,plotdata[p],color='red',size=8)
+        plt.text((x[p])-0.2,(y[p])+0.1,plotdata[p],color='red',size=7)
         print("Temp " + str(p))
-        plt.text((x[p])-0.2,(y[p])-0.1,plotdew[p],color='green',size=8)
+        plt.text((x[p])-0.2,(y[p])-0.1,plotdew[p],color='green',size=7)
         p = p + 1
     ax.set(xlim=(-85.62, -77.83), ylim=(33.37, 39.49))
     plt.xlim(-85.62, -77.83)
@@ -602,7 +602,7 @@ def SoApps():
     #rect = patches.Rectangle((-78.9,32.5),3.6,0.8,linewidth=1,edgecolor='black',facecolor='none')
     #ax.add_patch(rect)
     
-    plt.text(-81.725,33,'Southern Appalachians Surface Observations\nAppalachianWX.com',color='black',size=13,ha='center')
+    plt.text(-81.725,33,'Southern Appalachians Surface Observations\nAppalachianWX.com',color='black',size=9,ha='center')
     plt.savefig("output/SoAppsSurfaceObs.png",bbox_inches='tight',dpi=200)
 
 
