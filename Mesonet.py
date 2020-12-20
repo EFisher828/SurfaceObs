@@ -597,7 +597,7 @@ def SoApps():
                 i_end = shape.shape.parts[i+1]
             e = [i[0] for i in shape.shape.points[i_start:i_end]]
             f = [i[1] for i in shape.shape.points[i_start:i_end]]
-            plt.plot(e,f, color='black', linewidth=0.3)
+            plt.plot(e,f, color='grey', linewidth=0.4)
 
     #rect = patches.Rectangle((-78.9,32.5),3.6,0.8,linewidth=1,edgecolor='black',facecolor='none')
     #ax.add_patch(rect)
